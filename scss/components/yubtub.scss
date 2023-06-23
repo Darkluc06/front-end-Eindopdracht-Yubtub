@@ -1,0 +1,94 @@
+@use "../abstract/mixins";
+.yubtub {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    &__figure{
+        display: flex;
+        justify-content: center;
+    }
+    &__video{
+        height: 100%;
+        width: 80%;
+        object-fit: cover;
+        box-shadow: -1rem 1rem 2rem 1rem rgba($color: #000000, $alpha: 0.3);
+    }
+    &__comments{
+        padding-top: 4rem;
+        @include mixins.flexCenter;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+    }
+    &__comment{
+        padding-right: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba($color: #6441a5 , $alpha: 1);
+        height: 100%;
+        width: 80%;
+        border-radius: 0.5rem;
+        box-shadow: -0.5rem 0.5rem 2rem 0 rgba($color: #000000, $alpha: 0.3), inset 0 0 3rem 1rem rgba($color: #6441a5 , $alpha: 0.1);
+        &Section{
+            padding: 2rem;
+            margin: 2rem;
+            display: flex;
+            align-items: center;
+            width: 87%;
+            height: 8rem;
+            background: #eee;
+            border: 0.5rem solid black;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+    &__createComment{
+        padding-top: 4rem;
+        @include mixins.flexCenter;
+        flex-direction: column;
+        gap: 2rem;
+        &Section{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 8rem;
+            background: #eee;
+            border: 0.5rem solid black;
+            padding-right: 1rem;
+            padding-left: 1rem;  
+        }
+        &Input{
+            all: unset;
+            height: 100%;
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: scroll;
+        }
+    }
+    &__avatar{
+        height: 100%;
+        aspect-ratio: 1/1;
+        font-size: 5rem;
+        padding: 1rem;
+        color: rgba($color: #eee, $alpha: 1);
+        @include mixins.flexCenter;
+        
+    }
+    &__aside {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 4rem;
+        gap: 4rem;
+        &Video {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            box-shadow: -1rem 1rem 2rem 1rem rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+}
