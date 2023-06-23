@@ -1,0 +1,24 @@
+{
+    "videos":[
+        {
+            "id": 0,
+            "video": "../videos/video--0.mp4",
+            "comments": ["interesting video idea", "nice lights"]
+        },
+        {
+            "id": 1,
+            "video": "../videos/video--1.mp4",
+            "comments": ["interesting video idea", "very cool room"]
+        },
+        {
+            "id": 2,
+            "video": "../videos/video--2.mp4",
+            "comments": ["interesting video idea", "beautiful Slo-mo"]
+        },
+        {
+            "id": 3,
+            "video": "../videos/video--3.mp4",
+            "comments": ["interesting video idea", "epic effects. very similiar to audio effects. well done"]
+        }
+    ]
+}
